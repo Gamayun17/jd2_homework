@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="1" author="bachilolera">
+        <sql>
+            CREATE TABLE expenses(
+            num INT NOT NULL AUTO_INCREMENT,
+            paydate DATE NOT NULL,
+            value DECIMAL(10,0) NOT NULL,
+            receiver INT NOT NULL,
+
+            PRIMARY KEY (num)
+            );
+        </sql>
+    </changeSet>
+    <changeSet id="2" author="bachilolera">
+        <sql>
+            CREATE TABLE receivers (
+            num INT NOT NULL AUTO_INCREMENT,
+            name VARCHAR(255) NOT NULL,
+            PRIMARY KEY (num)
+            );
+        </sql>
+    </changeSet>
+    <changeSet id="3" author="bachilolera">
+        <sql>
+            INSERT INTO receivers VALUES
+            (1,'Интернет-провайдер "Соло"'),
+            (2, 'Гипермаркет "Корона"'),
+            (3, 'МТС') ;
+        </sql>
+    </changeSet>
+    <changeSet id="4" author="bachilolera">
+        <sql>
+            ALTER TABLE expenses
+            ADD FOREIGN KEY (receiver) REFERENCES receivers(num);
+        </sql>
+    </changeSet>
+    <changeSet id="5" author="bachilolera">
+        <sql>
+            INSERT INTO expenses VALUES
+            (1, '2011-5-10', 2000.0, 1),
+            (2, '2011-5-10', 94200.0, 2),
+            (3, '2011-5-11', 10000.0, 3),
+            (4, '2011-5-11', 12950.0, 2);
+        </sql>
+    </changeSet>
+</databaseChangeLog>
