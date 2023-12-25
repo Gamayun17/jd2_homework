@@ -1,4 +1,4 @@
-package servlet;
+package servlet.servlet;
 
 import java.io.*;
 
@@ -38,9 +38,4 @@ public class SecondServletTask9 extends HttpServlet {
         FileWriter writer = new FileWriter("D:\\jd2_homework\\home1work\\src\\main\\webapp\\countHit.txt");
         writer.write(cH);
         writer.close();
-    }
-
-    public void destroy(){
-
-    }
-}
+    }}

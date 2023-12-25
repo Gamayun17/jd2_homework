@@ -1,4 +1,4 @@
-package baseHomework.pra4;
+package servlet.baseHomework;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

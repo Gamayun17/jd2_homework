@@ -1,9 +1,8 @@
-package baseHomework.pra4;
+package servlet.baseHomework;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 public class BaseHomeworkTask5 {
 

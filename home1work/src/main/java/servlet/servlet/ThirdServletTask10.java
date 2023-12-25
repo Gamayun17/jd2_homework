@@ -1,4 +1,4 @@
-package servlet;
+package servlet.servlet;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import static jdk.internal.joptsimple.internal.Strings.isNullOrEmpty;
+
 
 @WebServlet(name = "Servlet3", urlPatterns = "/servlet3")
 
@@ -29,7 +29,7 @@ public class ThirdServletTask10 extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
-        if (isNullOrEmpty(name) || (isNullOrEmpty(phone) && isNullOrEmpty(email))) {
+        if (name.isEmpty() || (phone.isEmpty()&& email.isEmpty())) {
             out.println("<html>");
             out.println("<h1>" + "Error" + "<h1>");
         } else {
