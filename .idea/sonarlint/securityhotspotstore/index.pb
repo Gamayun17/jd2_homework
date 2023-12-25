@@ -101,3 +101,5 @@ Q.idea/sonarlint/securityhotspotstore/8/e/8e089be0351e00968048f7f5c0cb909360535a
 Q.idea/sonarlint/securityhotspotstore/2/0/206a3ac18ea65e2c27288702eb0da016aa4a472d,f\2\f26fb223f8228b17ddde806b6dde6d6e8c1dc7a1
 w
 G.idea/sonarlint/issuestore/0/d/0d0cbb4f535ba40847416af492eaea32deed8f22,b\c\bc9a9ca1a3cc91067e632815dfea47b9270e7863
+|
+Lhome1work/src/main/java/servlet/baseHomework/BaseHomeworkTask7/Reciever.java,f\e\fe5be4cb243edea799c7366d8bb3116c07c9a0d8
