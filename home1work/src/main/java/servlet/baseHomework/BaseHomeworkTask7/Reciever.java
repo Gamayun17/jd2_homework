@@ -12,7 +12,7 @@ public class Reciever implements Serializable {
 
 
 
-    public Reciever(Integer num, String name) {
+    public Reciever() {
         this.num = num;
         this.name = name;
     }
@@ -20,15 +20,15 @@ public class Reciever implements Serializable {
     public Integer getNum() {
         return num;
     }
-    public void setNum() {
-        this.num = num;
+    public void setNum(int num) {
+        this.num = this.num;
     }
 
     public String getName() {
         return name;
     }
-    public void setName() {
-        this.name = name;
+    public void setName(String name) {
+        this.name = this.name;
     }
     @Override
     public boolean equals(Object o) {
