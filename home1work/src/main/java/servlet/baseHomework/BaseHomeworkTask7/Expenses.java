@@ -5,10 +5,10 @@ import java.util.Objects;
 
 public class Expenses implements Serializable {
 
-   private final Integer num;
-  private final  String paydate;
-   private final  Integer receiver;
-   private final  Double value ;
+   private  Integer num;
+  private  String paydate;
+   private Integer receiver;
+   private Double value ;
 
         public Expenses(Integer num, String paydate, Integer receiver, Double value) {
             this.num = num;
@@ -21,17 +21,34 @@ public class Expenses implements Serializable {
         return num;
     }
 
+    public void setNum() {
+            this.num = num;
+    }
+
     public String getPaydate() {
         return paydate;
     }
 
+    public void setPaydate() {
+        this.paydate = paydate;
+    }
+
+
     public Integer getReceiver() {
         return receiver;
     }
+    public void setReceiver() {
+        this.receiver = receiver;
+    }
+
 
     public Double getValue() {
         return value;
     }
+    public void setValue() {
+        this.value = value;
+    }
+
 
     @Override
     public boolean equals(Object o) {

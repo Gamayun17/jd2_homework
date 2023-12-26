@@ -7,8 +7,8 @@ public class Reciever implements Serializable {
 
 
 
-    private final Integer num;
-    private final String name;
+    private Integer num;
+    private String name;
 
 
 
@@ -20,9 +20,15 @@ public class Reciever implements Serializable {
     public Integer getNum() {
         return num;
     }
+    public void setNum() {
+        this.num = num;
+    }
 
     public String getName() {
         return name;
+    }
+    public void setName() {
+        this.name = name;
     }
     @Override
     public boolean equals(Object o) {
