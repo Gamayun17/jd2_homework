@@ -3,14 +3,14 @@ package servlet.baseHomework.BaseHomeworkTask7;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class Expenses implements Serializable {
+public class Expense implements Serializable {
 
    private  Integer num;
   private  String paydate;
    private Integer receiver;
    private Double value ;
 
-        public Expenses(Integer num, String paydate, Integer receiver, Double value) {
+        public Expense(Integer num, String paydate, Integer receiver, Double value) {
             this.num = num;
             this.paydate = paydate;
             this.receiver = receiver;
@@ -55,12 +55,12 @@ public class Expenses implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Expenses expenses = (Expenses) o;
+        Expense expense = (Expense) o;
 
-        if (!Objects.equals(num, expenses.num)) return false;
-        if (!Objects.equals(paydate, expenses.paydate)) return false;
-        if (!Objects.equals(receiver, expenses.receiver)) return false;
-        return Objects.equals(value, expenses.value);
+        if (!Objects.equals(num, expense.num)) return false;
+        if (!Objects.equals(paydate, expense.paydate)) return false;
+        if (!Objects.equals(receiver, expense.receiver)) return false;
+        return Objects.equals(value, expense.value);
     }
 
     @Override
@@ -74,7 +74,7 @@ public class Expenses implements Serializable {
 
     @Override
         public String toString() {
-            return "Expenses{" +
+            return "Expense{" +
                     "num=" + num+
                     ", paydate=" + paydate +
                     ", receiver=" + receiver +
@@ -82,3 +82,5 @@ public class Expenses implements Serializable {
                     '}';
         }
 }
+
+//dto
