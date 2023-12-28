@@ -1,0 +1,5 @@
+
+m	java:S117f"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Ñ“8©Ú¢µÊ1
+w
+java:S1488f"ZImmediately return this expression instead of assigning it to the temporary variable "Ra".(·Ñ“8šÀ£µÊ1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¡ˆÜ¦8ˆ¡µÊ1

@@ -1,0 +1,22 @@
+
+{
+java:S2293$"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œ€¤—ÿÿÿÿÿ8˜®ºşÊ1
+v
+java:S22935"YReplace the type specification in this constructor call with the diamond operator ("<>").(¨Ö»Ğ8˜®ºşÊ1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜­ì8š®ºşÊ1
+N
+java:S1874>",Remove this use of "save"; it is deprecated.(ÍŠ”Şşÿÿÿÿ8¨®ºşÊ1
+N
+java:S1874I",Remove this use of "save"; it is deprecated.(õ¸‡÷ûÿÿÿÿ8©®ºşÊ1
+I
+java:S1874U",Remove this use of "load"; it is deprecated.(”©àœ8©®ºşÊ1
+I
+java:S1874\",Remove this use of "load"; it is deprecated.(²ïËû8ª®ºşÊ1
+K
+java:S1874j".Remove this use of "update"; it is deprecated.(¡¯·¶8ª®ºşÊ1
+P
+java:S1874u".Remove this use of "update"; it is deprecated.(‡îìÈúÿÿÿÿ8«®ºşÊ1
+K
+java:S1874".Remove this use of "delete"; it is deprecated.(óù‡½8¬®ºşÊ1
+L
+java:S1874Š".Remove this use of "delete"; it is deprecated.(ğ‹¾8­®ºşÊ1
