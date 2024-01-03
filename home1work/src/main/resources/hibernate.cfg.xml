@@ -2,9 +2,10 @@
 
     <session-factory>
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/home1work</property>
-        <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.username">user</property>
+        <property name="hibernate.connection.password">user</property>
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
@@ -12,6 +13,16 @@
         <property name="hibernate.flushMode">COMMIT</property>
         <mapping class = "servlet.baseAndHinernateHomework.baseHomeworkTask7.pojo.Expense"/>
         <mapping class = "servlet.baseAndHinernateHomework.baseHomeworkTask7.pojo.Reciever"/>
+        <mapping class = "servlet.hibernate4Homework.pojo.cmActpj.Worker"/>
+        <mapping class = "servlet.hibernate4Homework.pojo.cmActpj.Actor"/>
+        <mapping class = "servlet.hibernate4Homework.pojo.cmActpj.Producer"/>
+        <mapping class = "servlet.hibernate4Homework.pojo.cmChapj.ShowCharacters"/>
+        <mapping class = "servlet.hibernate4Homework.pojo.cmChapj.MainCharacter"/>
+        <mapping class = "servlet.hibernate4Homework.pojo.cmChapj.VillianCharacter"/>
+        <mapping class = "servlet.hibernate4Homework.pojo.cmpj.Show"/>
+        <mapping class = "servlet.hibernate4Homework.pojo.cmpj.Cm"/>
+        <mapping class = "servlet.hibernate4Homework.pojo.cmpj.CmElse"/>
+
 
     </session-factory>
 

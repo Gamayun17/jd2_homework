@@ -91,5 +91,26 @@
         </sql>
     </changeSet>
     <!--конец 6 задания-->
+    <changeSet id="9" author="bachilolera">
+        <sql>
+            CREATE TABLE WORKER (
+            num INT NOT NULL AUTO_INCREMENT,
+            name VARCHAR(255) NOT NULL,
+            birth_date VARCHAR(255) DEFAULT NULL,
+            birth_place VARCHAR(255) DEFAULT NULL,
+            active_year VARCHAR(255) DEFAULT NULL,
+            PRIMARY KEY (num)
+            );
+        </sql>
+    </changeSet>
+    <changeSet id="10" author="bachilolera">
+        <sql>
+            CREATE TABLE SHOWCHARACTER (
+            num INT,
+            name VARCHAR(255) NOT NULL,
+            PRIMARY KEY (num),
+            );
+        </sql>
+    </changeSet>
 
 </databaseChangeLog>

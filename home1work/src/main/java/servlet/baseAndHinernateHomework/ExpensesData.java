@@ -14,8 +14,8 @@ public class ExpensesData {
     protected Connection getExpensesData() throws SQLException {
         return DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/home1work",
-                "root",
-                "root");
+                "user",
+                "user");
 
     }
 
