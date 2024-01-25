@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd"
+       default-init-method="init" default-destroy-method="destroy">
+
+    <c:annotation-config/>
+    <c:property-placeholder location="classpath:springHomework.properties"/>
+    <c:component-scan base-package="servlet.springHomework">
+        <c:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
+        <c:exclude-filter type="assignable" expression="servlet.springHomework.NoteA"/>
+    </c:component-scan>
+
+
+    <bean id="note" class="servlet.springHomework.Note"  factory-method="getInstance">
+        <property name="name" value="Do"/>
+        <property name="timename" value="Crotchet"/>
+        <property name="accidentals" value="sharp"/>
+    </bean>
+
+    <bean id="musicalSymbols" class="servlet.springHomework.MusicalSymbols">
+        <property name="timeSignatures" value="common time"/>
+        <property name="clef" value="G clef"/>
+        <property name="dynamics" value="forte"/>
+    </bean>
+
+</beans>
+
