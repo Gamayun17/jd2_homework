@@ -112,5 +112,18 @@
             );
         </sql>
     </changeSet>
+    <changeSet id="11" author="bachilolera">
+
+        <sql>
+            CREATE TABLE IF NOT EXISTS T_SONG (
+            SONG_ID VARCHAR(255) NOT NULL,
+            SONG_TITLE VARCHAR(255) NOT NULL,
+            SONG_ARTISTNAME VARCHAR(255) NOT NULL,
+            SONG_ALBUMNAME VARCHAR(255) NOT NULL,
+            SONG_ARTISTLABEL VARCHAR(255) NOT NULL,
+            PRIMARY KEY (SONG_ID)
+            );
+        </sql>
+    </changeSet>
 
 </databaseChangeLog>

@@ -22,7 +22,7 @@
         <mapping class = "servlet.hibernate4Homework.pojo.cmpj.Show"/>
         <mapping class = "servlet.hibernate4Homework.pojo.cmpj.Cm"/>
         <mapping class = "servlet.hibernate4Homework.pojo.cmpj.CmElse"/>
-
+        <mapping class = "servlet.springHomework.Fifteen.pojo.Song"/>
 
     </session-factory>
 
